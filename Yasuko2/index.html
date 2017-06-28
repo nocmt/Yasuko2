@@ -54,32 +54,50 @@
                 </div>
             </article>
 
+            <style type="text/css">
+                
+                .page-box{
+                    width: 31%;
+                    height: 100%;
+                    margin: 0 auto;
+                    
+                }
+                .page-box a{
+                    display: inline-block;
+                    width: 50px;
+                    color: #FFFFFF;
+                    background-color: #000000;
+                    border-radius: 3px;
+                }
+                .page-box a:link,.page-box a:visited{
+                    background-color: #000000;
+                }
+                .page-box a:hover{
+                    background-color: #383746;
+                }
+                
+                
+                .content-page .page-span {
+                    color: #000000;
+                    background: none;
+                    padding: 0 5px;
+                }
+                
+            </style>
+
             <!--分页：采用pjax-->
-            <div class="content-page"></div>
+            <div class="content-page">
+                <div class="page-box">
+                    <span class="previous-page"><a href="/">上一页</a></span>
+                    <span class="page-span">Page 2 of 37</span>
+                    <span class="next-page"><a href="/">下一页</a></span>
+                </div>
+            </div>
         </div>
-        <style type="text/css">
-            .public-footer {
-                width: 100%;
-                height: 80px;
-                background-color: #383746;
-            }
-            
-            .footer-copy,
-            .footer-record {
-                text-align: center;
-                color: #FFFFFF;
-                padding-top: 20px;
-                font-size: 0.9rem;
-            }
-            
-            .footer-record {
-                padding-top: 0;
-            }
-        </style>
         <!--页脚-->
         <footer class="public-footer">
             <p class="footer-copy">&copy; JM | 主题：
-                <a href="https://github.com/nocmt/Yasuko2">Yasuko</a>
+                <a href="https://github.com/nocmt/Yasuko2">Yasuko2</a>
             </p>
             <p class="footer-record">湘ICP备17004757号</p>
         </footer>
