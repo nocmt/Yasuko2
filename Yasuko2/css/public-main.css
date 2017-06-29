@@ -41,6 +41,26 @@ body {
 }
 
 
+/*上一页/下一页*/
+
+.page-box a {
+    display: inline-block;
+    width: 50px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
+.page-box a:link,
+.page-box a:visited {
+    background-color: #000000;
+}
+
+.page-box a:hover {
+    background-color: #383746;
+}
+
+
 /*公用样式*/
 
 a {
@@ -54,7 +74,6 @@ a {
     width: 100%;
     height: 450px;
     display: table;
-    background-image: url('../img/f1.jpg');
     background-position: center;
 }
 
@@ -68,14 +87,6 @@ a {
     display: block;
     margin: 0 auto;
     margin-top: 78px;
-}
-
-
-/*标题私有样式*/
-
-.header-title {
-    height: 100px;
-    background: none;
 }
 
 
@@ -146,17 +157,19 @@ a {
 /*内容*/
 
 .public-content {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
     overflow: hidden;
 }
-
+.article-box{
+    width: 100%;
+}
 
 /*文章*/
 
 .content-article {
-    width: 100%;
-    margin-top: 25px;
+    width: 50%;
+    padding-top: 25px;
+    margin: 0 auto;
     border-radius: 3px;
     position: relative;
 }
@@ -229,6 +242,24 @@ a {
     width: 100%;
     height: 30px;
     margin: 25px 0;
+    text-align: center;
+}
+
+/*分页盒子*/
+
+.page-box {
+    width: 31%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*分页信息*/
+
+.content-page .page-span {
+    display: inline-block;
+    color: #000000;
+    background: none;
+    padding: 0 5px;
 }
 
 

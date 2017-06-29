@@ -27,7 +27,7 @@
 
     <body>
         <!--头部-->
-        <header class="public-header">
+        <header class="public-header" style="background-image: url('img/header2.jpg');">
             <!--菜单-->
             <div class="header-menu">
                 <span><a class="menu-home" href="index.html"><i class="fa fa-home"></i></a></span>
@@ -44,48 +44,41 @@
         <!--内容-->
         <div class="public-content">
             <!--文章-->
-            <article class="content-article">
-                <img class="article-img" src="http://image.nocmt.com/2017062701/0.jpg" alt="封面.jpg" />
-                <h1 class="article-title"><a href="/">DJANGO模板系统使用指南</a></h1>
-                <div class="article-inf">
-                    <span class="inf-date">20 Jun 2017</span>
-                    <span class="inf-tag"><a href="/">Django</a></span>
-                    <span class="inf-tag"><a href="/">Web开发</a></span>
-                </div>
-            </article>
+            <div class="article-box">
+                <article class="content-article">
+                    <img class="article-img" src="http://image.nocmt.com/2017062701/0.jpg" alt="封面.jpg"/>
+                    <h1 class="article-title"><a href="/">DJANGO模板系统使用指南</a></h1>
+                    <div class="article-inf">
+                        <span class="inf-date">20 Jun 2017</span>
+                        <span class="inf-tag"><a href="/">Django</a></span>
+                        <span class="inf-tag"><a href="/">Web开发</a></span>
+                    </div>
+                </article>
+            </div>
+            <div class="article-box1">
+                <article class="content-article">
+                    <img class="article-img" src="http://image.nocmt.com/2017060701/0.jpg" alt="封面.jpg"/>
+                    <h1 class="article-title"><a href="/">DJANGO1.11.1使用xadmin的方法（二： 简单配置篇）</a></h1>
+                    <div class="article-inf">
+                        <span class="inf-date">20 Jun 2017</span>
+                        <span class="inf-tag"><a href="/">Django</a></span>
+                        <span class="inf-tag"><a href="/">Web开发</a></span>
+                    </div>
+                </article>
+            </div>
+            <div class="article-box2">
+                <article class="content-article">
+                    <img class="article-img" src="http://image.nocmt.com/2017052701/0.jpg" alt="封面.jpg"/>
+                    <h1 class="article-title"><a href="/">给你的Markdown文章添加代码高亮及行号</a></h1>
+                    <div class="article-inf">
+                        <span class="inf-date">20 Jun 2017</span>
+                        <span class="inf-tag"><a href="/">Markdown</a></span>
+                        <span class="inf-tag"><a href="/">Web开发</a></span>
+                    </div>
+                </article>
+            </div>
 
-            <style type="text/css">
-                
-                .page-box{
-                    width: 31%;
-                    height: 100%;
-                    margin: 0 auto;
-                    
-                }
-                .page-box a{
-                    display: inline-block;
-                    width: 50px;
-                    color: #FFFFFF;
-                    background-color: #000000;
-                    border-radius: 3px;
-                }
-                .page-box a:link,.page-box a:visited{
-                    background-color: #000000;
-                }
-                .page-box a:hover{
-                    background-color: #383746;
-                }
-                
-                
-                .content-page .page-span {
-                    color: #000000;
-                    background: none;
-                    padding: 0 5px;
-                }
-                
-            </style>
-
-            <!--分页：采用pjax-->
+            <!--分页：决定采用pjax-->
             <div class="content-page">
                 <div class="page-box">
                     <span class="previous-page"><a href="/">上一页</a></span>
@@ -101,6 +94,16 @@
             </p>
             <p class="footer-record">湘ICP备17004757号</p>
         </footer>
+        
+        <!--<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+                    父元素自适应子元素图片背景色
+        <script src="js/jquery.adaptive-backgrounds.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $.adaptiveBackground.run();
+            });
+        </script>-->
+
     </body>
 
 </html>
