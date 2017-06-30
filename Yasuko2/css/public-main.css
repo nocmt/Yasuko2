@@ -1,3 +1,7 @@
+/*原则: 
+1.可变文字处不设置宽高.
+2.div宽度百分比,高度自定义.*/
+
 body {
     font-family: 'Bellefair', "新宋体", 'serif', 'Microsoft YaHei';
     position: relative;
@@ -70,7 +74,7 @@ a {
 
 /*--搜索---*/
 
-.public-search-box {
+.public-search {
     display: none;
     width: 100%;
     height: 130px;
@@ -216,13 +220,6 @@ a {
 }
 
 
-/*标题私有样式*/
-
-.header-title {
-    height: 75px;
-}
-
-
 /*标题内部文字公有样式*/
 
 .title-english,
@@ -238,7 +235,6 @@ a {
 /*标题内部文字私有样式*/
 
 .title-english {
-    height: 50px;
     font-size: 2rem;
 }
 
@@ -246,7 +242,7 @@ a {
 /*标题内部文字私有样式*/
 
 .title-chinese {
-    height: 25px;
+    margin-top: 10px;
     font-size: 1.2rem;
 }
 
@@ -293,7 +289,6 @@ a {
 /*文章标题*/
 
 .public-content .article-title {
-    height: 40px;
     bottom: 50px;
     font-weight: normal;
 }
@@ -323,7 +318,8 @@ a {
 
 /*文章信息span公用样式*/
 
-.public-content .article-inf span {
+.article-inf .inf-date,
+.inf-tag {
     display: inline-block;
     height: 85%;
     margin-left: 15px;
@@ -331,19 +327,12 @@ a {
 }
 
 
-/*文章信息日期*/
-
-.public-content .article-inf .inf-date {
-    width: 92px;
-}
-
 
 /*分页*/
 
 .content-page {
     width: 100%;
-    height: 30px;
-    margin: 25px 0;
+    margin: 25px auto;
     text-align: center;
 }
 
