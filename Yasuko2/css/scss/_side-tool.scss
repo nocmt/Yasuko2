@@ -28,3 +28,19 @@
       *.tool-chart{}
       *.tool-share{}*/
 }
+.swal-share {
+    width: 50px;
+    height: 50px;
+    @include  color-white;
+    background-color: #2A363B;
+    font-size: 1.8rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    &:hover {
+        color: #F6FEA1;
+        background-color: #1D3E53;
+    }
+}
