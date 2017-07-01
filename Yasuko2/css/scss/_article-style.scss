@@ -1,0 +1,35 @@
+@mixin article-h {
+    width: 96%;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+@mixin article {
+    font-family: 'Ubuntu', "Microsoft YaHei", "黑体";
+    width: 96%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    a {
+        color: #1abc9c;
+        &:hover {
+            color: #F03861;
+            text-decoration: underline;
+        }
+    }
+    img {
+        width: 100%;
+        margin: 0;
+        margin: 8px 0;
+        border-radius: 3px;
+        border-style: none;
+    }
+    p {
+        word-break: break-all;
+        color: #000000;
+        margin: 10px auto;
+        display: block;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+}

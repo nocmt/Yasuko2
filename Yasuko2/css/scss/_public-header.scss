@@ -3,6 +3,7 @@
     height: 450px;
     display: table;
     background-position: center;
+    background-repeat: no-repeat;
     .header-menu {
         @include style-head-box;
         .menu-home {
@@ -17,13 +18,35 @@
         @include style-head-box;
         .title-english {
             @include style-title;
+            text-align: center;
             font-size: 2rem;
         }
         .title-chinese {
             @include style-title;
+            text-align: center;
             margin-top: 10px;
             font-size: 1.2rem;
         }
+        //详情页样式
+        .details-title {
+            @include style-title;
+            width: auto;
+            font-size: 2rem;
+        }
+        .details-inf {
+            @include style-title;
+            width: auto;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            a{
+                color: #FFFFFF;
+                &:hover {
+                    color: #F6FEA1;
+                }
+
+            }
+        }
+        
     }
 }
 

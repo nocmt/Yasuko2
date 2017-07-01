@@ -28,36 +28,48 @@
     .public-header {
         height: 330px;
         .header-menu {
-            @include width-90;;
+            @include width-90;
+            ;
             margin-top: 48px;
         }
         .header-title {
-            @include width-90;;
+            @include width-90;
+            ;
             .title-english {
                 font-size: 2.3rem;
             }
             .title-chinese {
                 font-size: 1.3rem;
             }
+            .details-title {
+                font-size: 2.3rem;
+            }
+            .details-inf {
+                font-size: 1.3rem;
+            }
         }
     }
     .public-search {
         .search-box {
-            @include width-50;;
+            @include width-50;
+            ;
         }
         .search-other {
-            @include width-50;;
+            @include width-50;
+            ;
         }
     }
     .public-content {
         .article-box {
             .content-article {
-                @include width-90;;
+                @include width-90;
+                ;
             }
         }
         .content-page {
             .page-box {
-                @include width-50;;
+                @include width-50;
+                ;
             }
         }
     }
@@ -80,6 +92,12 @@
                 font-size: 1.8rem;
             }
             .title-chinese {
+                font-size: 1rem;
+            }
+            .details-title {
+                font-size: 1.8rem;
+            }
+            .details-inf {
                 font-size: 1rem;
             }
         }
