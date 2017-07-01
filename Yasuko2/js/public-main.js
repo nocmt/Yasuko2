@@ -9,7 +9,7 @@ $(document).ready(function() {
         }
     });
     //显示顶部搜索框
-    $(".menu-search").click(function() {
+    $(".menu-search,.menu-close").click(function() {
         //顶部搜索框动画
         $(".public-search").animate({
             height: 'toggle'

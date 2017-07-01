@@ -1,0 +1,92 @@
+.public-header {
+    @include width-100;
+    height: 450px;
+    display: table;
+    background-position: center;
+    .header-menu {
+        @include style-head-box;
+        .menu-home {
+            @include style-menu;
+        }
+        .menu-search {
+            @include style-menu;
+            cursor: pointer;
+        }
+    }
+    .header-title {
+        @include style-head-box;
+        .title-english {
+            @include style-title;
+            font-size: 2rem;
+        }
+        .title-chinese {
+            @include style-title;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.public-search {
+    display: none;
+    @include width-100;
+    height: 130px;
+    @include color-white;
+    background-color: #383746;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    .search-close {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        z-index: 999;
+        .menu-close {
+            @include style-menu;
+            background: none;
+            &:hover {
+                background: none;
+            }
+        }
+    }
+    .search-box {
+        width: 30%;
+        background: #FFFFFF;
+        position: relative;
+        margin: 20px auto;
+        form {
+            border-bottom: 2px solid #383746;
+            input {
+                @include style-input;
+                @include width-100;
+                padding-left: 13px;
+            }
+            button {
+                @include style-input;
+                width: 42px;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+                &:before {
+                    content: "\f178";
+                    font-family: FontAwesome;
+                    font-size: 20px;
+                    color: #be290e;
+                }
+            }
+        }
+    }
+    .search-other {
+        width: 30%;
+        height: 43px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        .other-ul-li {
+            display: inline-block;
+            list-style: none;
+            /*待续*/
+        }
+    }
+}

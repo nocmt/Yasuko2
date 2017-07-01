@@ -1,0 +1,124 @@
+@include media('<=980px') {
+    .public-header {
+        .header-menu {
+            @include width-80;
+        }
+        .header-title {
+            @include width-80;
+        }
+    }
+    .public-search {
+        .search-box {
+            @include width-40;
+        }
+        .search-other {
+            @include width-40;
+        }
+    }
+    .public-content {
+        .article-box {
+            .content-article {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@include media('<=640px') {
+    .public-header {
+        height: 330px;
+        .header-menu {
+            @include width-90;;
+            margin-top: 48px;
+        }
+        .header-title {
+            @include width-90;;
+            .title-english {
+                font-size: 2.3rem;
+            }
+            .title-chinese {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .public-search {
+        .search-box {
+            @include width-50;;
+        }
+        .search-other {
+            @include width-50;;
+        }
+    }
+    .public-content {
+        .article-box {
+            .content-article {
+                @include width-90;;
+            }
+        }
+        .content-page {
+            .page-box {
+                @include width-50;;
+            }
+        }
+    }
+    .side-tool {
+        right: 10px;
+        bottom: 65px;
+    }
+}
+
+@include media('<=480px') {
+    .public-header {
+        height: 300px;
+        .header-menu {
+            width: 94%;
+            margin-top: 40px;
+        }
+        .header-title {
+            width: 94%;
+            .title-english {
+                font-size: 1.8rem;
+            }
+            .title-chinese {
+                font-size: 1rem;
+            }
+        }
+    }
+    .public-search {
+        .search-box {
+            @include width-80;
+        }
+        .search-other {
+            @include width-80;
+        }
+    }
+    .public-content {
+        margin-bottom: 0;
+        .article-box {
+            .content-article {
+                width: 94%;
+                padding-top: 15px;
+                .article-title {
+                    font-size: 1.3rem;
+                }
+                .article-inf {
+                    span {
+                        font-size: 0.8rem;
+                    }
+                    .inf-tag {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .content-page {
+            margin: 15px auto;
+            .page-box {
+                @include width-80;
+            }
+        }
+    }
+    .side-tool {
+        right: 5px;
+    }
+}

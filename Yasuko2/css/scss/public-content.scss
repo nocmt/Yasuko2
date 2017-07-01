@@ -1,0 +1,59 @@
+.public-content {
+    @include width-100;
+    overflow: hidden;
+    .article-box {
+        @include width-100;
+        .content-article {
+            @include width-50;;
+            padding-top: 25px;
+            margin: 0 auto;
+            border-radius: 3px;
+            position: relative;
+            
+            .article-img {
+                @include width-100;
+                height: auto;
+                margin: 0;
+                border-radius: 3px;
+                &:hover {
+                    box-shadow: 5px 12px 20px rgba(36, 37, 38, 0.13);
+                }
+            }
+            .article-title {
+                @include style-article-title;
+                bottom: 50px;
+                font-weight: 400;
+                a {
+                    padding-left: 15px;
+                }
+            }
+            .article-inf {
+                @include style-article-title;
+                bottom: 10px;
+                span {
+                    display: inline-block;
+                    margin-left: 15px;
+                    margin-top: 1px;
+                }
+            }
+        }
+    }
+    .content-page {
+        @include width-100;
+        margin: 25px auto;
+        text-align: center;
+        .page-box {
+            width: 31%;
+            height: 100%;
+            margin: 0 auto;
+            /* .previous-page{}*/
+            .page-span {
+                display: inline-block;
+                color: #71ADB5;
+                background: none;
+                padding: 0 5px;
+            }
+            /*.next-page{}*/
+        }
+    }
+}

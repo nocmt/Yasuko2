@@ -3,7 +3,7 @@ Yasuko-theme Pure static Edition
 
 本主题移植于：[Yasuko](https://github.com/foru17/Yasuko)
 
-原主题原为Ghost主题，非纯静态模板。
+原主题原为"Ghost"主题，非纯静态模板。
 
 所以我移植了一下，优化了代码组织方式，新增一些其他的功能，用来满足自己的需要。
 

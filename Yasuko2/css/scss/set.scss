@@ -1,0 +1,99 @@
+body {
+    font-family: 'Bellefair', "新宋体", 'serif', 'Microsoft YaHei';
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin color-white {
+    color: #FFFFFF;
+}
+
+@mixin width-100 {
+    width: 100%;
+}
+@mixin width-90 {
+    width: 90%;
+}
+@mixin width-80 {
+    width: 80%;
+}
+
+@mixin width-40 {
+    width: 40%;
+}
+
+@mixin width-50 {
+    width: 50%;
+}
+
+@mixin style-head-box {
+    @include width-50;;
+    height: 34px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 78px;
+}
+
+@mixin style-menu {
+    width: 34px;
+    height: 100%;
+    display: inline-block;
+    @include color-white;
+    background-color: #2A363B;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 3px;
+    /*
+    * 去除间隙
+    * margin-right: -3px;*/
+    &:hover {
+        background-color: #1D3E53;
+    }
+}
+
+@mixin style-title {
+    @include width-100;
+    @include color-white;
+    text-align: center;
+    text-shadow: 0 1px 1px #595959;
+    font-weight: lighter;
+    &:hover {
+        color: #efefef;
+    }
+}
+
+@mixin style-input {
+    border: none;
+    outline: none;
+    height: 42px;
+    background: transparent;
+}
+
+@mixin style-footer-p($top) {
+    text-align: center;
+    @include color-white;
+    font-size: 0.9rem;
+    padding-top: $top;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+@mixin style-article-title {
+    @include width-100;
+    @include color-white;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+}
