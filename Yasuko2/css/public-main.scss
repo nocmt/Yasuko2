@@ -1,7 +1,7 @@
 //媒体查询插件
 @import "scss/_include-media";
 //所有变量
-@import "scss/_variable";
+@import "scss/_public-variable";
 //链接样式
 @import "scss/_public-link";
 //公共部分
@@ -9,7 +9,7 @@
 @import "scss/_public-content";
 @import "scss/_public-footer";
 //工具条
-@import "scss/_side-tool";
+@import "scss/_public-tool.scss";
 //媒体查询
 @import "scss/_public-media";
 
