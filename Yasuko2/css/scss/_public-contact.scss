@@ -1,0 +1,44 @@
+@mixin none {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.public-contact {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 15px 15px 15px 47px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .75) inset;
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+    position: relative;
+    input {
+        @include none;
+        display: inline-block;
+        width: 49%;
+    }
+    textarea {
+        @include none;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100%;
+        padding-top: 20px;
+        resize: none;
+    }
+    .send-btn {
+        @include none;
+        font-size: 2rem;
+        cursor: pointer;
+        top: 40%;
+        left: -25px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #FFFFFF;
+        &:hover {
+            color: #1D3E53;
+        }
+    }
+}

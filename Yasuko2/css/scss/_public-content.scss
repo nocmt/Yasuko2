@@ -6,6 +6,7 @@
         .content-article {
             @include width-50;
             margin: 25px auto;
+            padding-bottom: 10px;
             border-radius: 3px;
             position: relative;
             background-color: #FFFFFF;
