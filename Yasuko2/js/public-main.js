@@ -49,4 +49,16 @@ $(document).ready(function() {
                 '<span><a class="swal-share" href="http://service.weibo.com/share/share.php?url=http%3A%2F%2F127.0.0.1%3A8020%2FYasuko2%2Findex.html%230-tsina-1-14960-397232819ff9a47a7b7e80a40613cfe1&title=Nocmt%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%AB%99%EF%BC%8C%E7%BC%84%E9%BB%98%E6%97%A0%E8%A8%80%EF%BC%8C%E5%AD%98%E5%BF%B5%E4%BA%8E%E5%BF%83%E3%80%82&appkey=1343713053&pic=http%3A%2F%2Fimage.nocmt.com%2F2017060701%2F0.jpg&searchPic=true " title="分享到新浪微博"><i class="fa fa-weibo" aria-hidden="true"></i></a></span>'
         });
     });
+    //打赏
+    $(".article-award").click(function() {
+        swal({
+            title: '打赏',
+            text: '您的鼓励将使我创作更多优质的文章！',
+            imageUrl: 'https://unsplash.it/400/200',
+            imageWidth: 400,
+            imageHeight: 200,
+            animation: false
+        });
+    });
+
 });
