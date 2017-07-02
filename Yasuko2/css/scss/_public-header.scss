@@ -4,6 +4,8 @@
     display: table;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 25px;
+    
     .header-menu {
         @include style-head-box;
         .menu-home {
