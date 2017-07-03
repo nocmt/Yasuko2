@@ -38,6 +38,7 @@ body {
 }
 
 .public-header {
+    background-position: center;
     .header-menu {
         .menu-home {
             @include color-menu(#FFFFFF, #2A363B, #FFFFFF, #1D3E53);
@@ -48,17 +49,18 @@ body {
     }
     .header-title {
         .title-english {
-            @include color-title(#FFFFFF, #efefef);
+            //@include color-title(#FFFFFF, #efefef);
+            @include color-title(#000000, #000000);
         }
         .title-chinese {
-            @include color-title(#FFFFFF, #efefef);
+            @include color-title(#000000, #000000);
         }
         //详情页样式
         .details-title {
-            @include color-title(#FFFFFF, #efefef);
+            @include color-title(#000000, #000000);
         }
         .details-inf {
-            @include color-title(#FFFFFF, #efefef);
+            @include color-title(#000000, #000000);
             a {
                 color: #FFFFFF;
                 &:hover {

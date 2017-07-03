@@ -11,4 +11,5 @@ Yasuko-theme Pure static Edition
 
 你可以随意使用、修改、复制，但麻烦在网站底部或其他部分注明主题名称，并给予链接，例如：主题：[Yasuko2](https://github.com/nocmt/Yasuko2)
 
-![截图](http://image.nocmt.com/otherimg/website0.3.1.jpg)
+![截图](http://image.nocmt.com/otherimg/01.png)
+![截图](http://image.nocmt.com/otherimg/02.png)
