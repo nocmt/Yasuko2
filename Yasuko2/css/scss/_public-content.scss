@@ -1,17 +1,17 @@
 .public-content {
-    @include width-100;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 25px;
     .article-box {
-        @include width-100;
+        width: 100%;
         .content-article {
-            @include width-50;
+            width: 50%;
             margin: 0 auto;
             border-radius: 3px;
             position: relative;
-            background-color: #FFFFFF;
+//          padding-bottom: 8px;
             .article-img {
-                @include width-100;
+                width: 100%;
                 height: auto;
                 margin: 0;
                 border-radius: 3px;
@@ -20,7 +20,17 @@
                 }
             }
             .article-body {
-                @include article;
+                font-family: 'Ubuntu', "Microsoft YaHei", "黑体";
+                width: 96%;
+                margin: 0 auto;
+                padding-bottom: 10px;
+                img {
+                    width: 100%;
+                    margin: 0;
+                    margin: 8px 0;
+                    border-radius: 3px;
+                    border-style: none;
+                }
                 .article-award {
                     width: 100%;
                     span {
@@ -30,8 +40,6 @@
                         height: 50px;
                         border-radius: 50%;
                         margin: 0 auto;
-                        color: #FFFFFF;
-                        background-color: #1EE494;
                         text-align: center;
                         font-size: 1.5rem;
                         line-height: 50px;
@@ -58,7 +66,7 @@
         }
     }
     .content-page {
-        @include width-100;
+        width: 100%;
         margin: 25px auto;
         text-align: center;
         .page-box {
@@ -68,7 +76,6 @@
             /* .previous-page{}*/
             .page-span {
                 display: inline-block;
-                color: #71ADB5;
                 background: none;
                 padding: 0 5px;
             }

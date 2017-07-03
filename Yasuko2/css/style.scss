@@ -1,0 +1,160 @@
+/*说明
+ * color-menu（color，background，hover-color，hover-background）
+ * color-title（color，hover-color）
+ * */
+
+@import "scss/_public-variable";
+body {
+    font-family: 'Bellefair', "新宋体", "Microsoft YaHei", "黑体";
+    background-color: #f0f0f0;
+}
+
+.page-box a:link,
+.page-box a:visited,
+.other-ul-li a:link,
+.other-ul-li a:visited,
+.footer-copy a:link,
+.content-article a:link,
+.footer-copy a:visited,
+.content-article a:visited {
+    color: white;
+    @include transition(color 1s);
+}
+
+.page-box a:link,
+.page-box a:visited {
+    font-weight: bold;
+    color: #000000;
+}
+
+.page-box a:hover,
+.other-ul-li a:hover {
+    color: #F03861;
+}
+
+.footer-copy a:hover,
+.content-article a:hover {
+    color: #F6FEA1;
+}
+
+.public-header {
+    .header-menu {
+        .menu-home {
+            @include color-menu(#FFFFFF, #2A363B, #FFFFFF, #1D3E53);
+        }
+        .menu-search {
+            @include color-menu(#FFFFFF, #2A363B, #FFFFFF, #1D3E53);
+        }
+    }
+    .header-title {
+        .title-english {
+            @include color-title(#FFFFFF, #efefef);
+        }
+        .title-chinese {
+            @include color-title(#FFFFFF, #efefef);
+        }
+        //详情页样式
+        .details-title {
+            @include color-title(#FFFFFF, #efefef);
+        }
+        .details-inf {
+            @include color-title(#FFFFFF, #efefef);
+            a {
+                color: #FFFFFF;
+                &:hover {
+                    color: #F6FEA1;
+                }
+            }
+        }
+    }
+}
+
+
+/*搜索背景*/
+
+.public-search {
+    color: white;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    /*按钮*/
+    .search-close {
+        .menu-close {
+            @include color-menu(#FFFFFF, none, #F03861, none);
+        }
+    }
+    .search-box {
+        background: #FFFFFF;
+    }
+}
+
+.public-content {
+    .article-box {
+        .content-article {
+            background-color: #FFFFFF;
+            .article-body {
+                font-family: 'Ubuntu', "Microsoft YaHei", "黑体";
+                a {
+                    color: #1abc9c;
+                    &:hover {
+                        color: #F03861;
+                    }
+                }
+                .article-award {
+                    width: 100%;
+                    span {
+                        color: #FFFFFF;
+                        background-color: #1EE494;
+                    }
+                }
+            }
+        }
+    }
+    .content-page {
+        .page-box {
+            .page-span {
+                color: #71ADB5;
+            }
+        }
+    }
+}
+
+//留言版
+.public-contact {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    .send-btn {
+        background-color: #FFFFFF;
+        &:hover {
+            color: #1D3E53;
+        }
+    }
+}
+
+.public-footer {
+    background-color: #303841;
+    .footer-copy {
+        color: #FFFFFF;
+    }
+    .footer-record {
+        color: #FFFFFF;
+    }
+}
+
+.side-tool {
+    li {
+        color: #333333;
+        background-color: #FFFFFF;
+        border: 1px solid #dcdcdc;
+        &:hover {
+            background-color: hsla(0, 0%, 71%, .1);
+        }
+    }
+}
+
+.swal-share {
+    color: #FFFFFF;
+    background-color: #2A363B;
+    border: 1px solid #dcdcdc;
+    &:hover {
+        color: #F6FEA1;
+        background-color: #1D3E53;
+    }
+}

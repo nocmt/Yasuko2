@@ -1,18 +1,18 @@
 @include media('<=980px') {
     .public-header {
         .header-menu {
-            @include width-80;
+            width: 80%;
         }
         .header-title {
-            @include width-80;
+            width: 80%;
         }
     }
     .public-search {
         .search-box {
-            @include width-40;
+            width: 40%;
         }
         .search-other {
-            @include width-40;
+            width: 40%;
         }
     }
     .public-content {
@@ -28,12 +28,12 @@
     .public-header {
         height: 330px;
         .header-menu {
-            @include width-90;
+            width: 90%;
             ;
             margin-top: 48px;
         }
         .header-title {
-            @include width-90;
+            width: 90%;
             ;
             .title-english {
                 font-size: 2.3rem;
@@ -51,25 +51,25 @@
     }
     .public-search {
         .search-box {
-            @include width-50;
-            ;
+            width: 50%;
+            
         }
         .search-other {
-            @include width-50;
-            ;
+            width: 50%;
+            
         }
     }
     .public-content {
         .article-box {
             .content-article {
-                @include width-90;
-                ;
+                width: 90%;
+                
             }
         }
         .content-page {
             .page-box {
-                @include width-50;
-                ;
+                width: 50%;
+                
             }
         }
     }
@@ -104,10 +104,10 @@
     }
     .public-search {
         .search-box {
-            @include width-80;
+            width: 80%;
         }
         .search-other {
-            @include width-80;
+            width: 80%;
         }
     }
     .public-content {
@@ -132,7 +132,7 @@
         .content-page {
             margin: 15px auto;
             .page-box {
-                @include width-80;
+                width: 80%;
             }
         }
     }

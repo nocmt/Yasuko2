@@ -2,15 +2,12 @@
 @import "scss/_include-media";
 //所有变量
 @import "scss/_public-variable";
-//链接样式
-@import "scss/_public-link";
 //公共部分
 @import "scss/_public-header";
-@import "scss/_article-style";
 @import "scss/_public-content";
 @import "scss/_public-contact";
 @import "scss/_public-footer";
 //工具条
-@import "scss/_public-tool.scss";
-//媒体查询
+@import "scss/_public-tool";
+//媒体查询 
 @import "scss/_public-media";

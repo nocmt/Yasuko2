@@ -1,40 +1,10 @@
-body {
-    font-family: 'Bellefair', "新宋体", "Microsoft YaHei", "黑体";
-    position: relative;
-    background-color: #f0f0f0;
-}
-
 a {
     text-decoration: none;
 }
 
-@mixin color-white {
-    color: #FFFFFF;
-}
-
-@mixin width-100 {
-    width: 100%;
-}
-
-@mixin width-90 {
-    width: 90%;
-}
-
-@mixin width-80 {
-    width: 80%;
-}
-
-@mixin width-40 {
-    width: 40%;
-}
-
-@mixin width-50 {
-    width: 50%;
-}
 
 @mixin style-head-box {
-    @include width-50;
-    ;
+    width: 50%;
     height: 34px;
     display: block;
     margin: 0 auto;
@@ -45,29 +15,35 @@ a {
     width: 34px;
     height: 100%;
     display: inline-block;
-    @include color-white;
-    background-color: #2A363B;
     font-size: 1rem;
     text-align: center;
     line-height: 34px;
     border-radius: 3px;
-    /*
-    * 去除间隙
-    * margin-right: -3px;*/
+}
+
+@mixin color-menu($color,$bcolor,$hcolor,$hbcolor) {
+    color: $color;
+    background: $bcolor;
     &:hover {
-        background-color: #1D3E53;
+        color: $hcolor;
+        background: $hbcolor;
     }
 }
 
+
 @mixin style-title {
-    @include width-100;
-    @include color-white;
+    width: 100%;
     text-shadow: 0 1px 1px #595959;
     font-weight: lighter;
+}
+
+@mixin color-title($color,$hcolor){
+    color: $color;
     &:hover {
-        color: #efefef;
+        color: $hcolor;
     }
 }
+
 
 @mixin style-input {
     border: none;
@@ -78,7 +54,6 @@ a {
 
 @mixin style-footer-p($top) {
     text-align: center;
-    @include color-white;
     font-size: 0.9rem;
     padding-top: $top;
 }
@@ -92,8 +67,8 @@ a {
 }
 
 @mixin style-article-title {
-    @include width-100;
-    @include color-white;
+    width: 100%;
+    color: white;
     background-color: transparent;
     position: absolute;
     z-index: 2;
