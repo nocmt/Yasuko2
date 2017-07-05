@@ -62,9 +62,9 @@ body {
         .details-inf {
             @include color-title(#000000, #000000);
             a {
-                color: #FFFFFF;
+                color: #000000;
                 &:hover {
-                    color: #F6FEA1;
+                    color: #F03861;
                 }
             }
         }
